@@ -58,7 +58,7 @@ class VibeVoiceDemo:
             self.model_path,
             torch_dtype=torch.bfloat16,
             device_map='cuda',
-            attn_implementation="flash_attention_2",
+            attn_implementation="eager",
         )
         self.model.eval()
         
